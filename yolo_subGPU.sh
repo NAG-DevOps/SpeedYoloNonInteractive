@@ -21,7 +21,7 @@
 # -o name.qlog
 
 
-conda activate /speed-scratch/$USER/YOLOInteractive
+conda activate /speed-scratch/$USER/YOLO
 
 # Image example 
 #python yolo_video.py --model model_data/yolo.h5 --classes model_data/coco_classes.txt --image  --gpu_num 2

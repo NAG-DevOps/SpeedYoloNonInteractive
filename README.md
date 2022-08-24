@@ -37,7 +37,7 @@ The pre-requisites to prepare the virtual development environment using anaconda
 1. Make sure you are in speed-scratch directory. Then Download Yolo project from [Github website](https://github.com/tariqghd/SpeedYolo) to your speed-scratch proper diectory. 
 ```
 cd /speed-scratch/$USER/
-git clone https://github.com/tariqghd/SpeedYolo.git
+git clone https://github.com/NAG-DevOps/SpeedYoloNonInteractive.git
 ```
 2. Starting by loading anaconda module 
 ```
@@ -53,8 +53,8 @@ conda env remove -p /speed-scratch/$USER/YOLO
 
 ```
 cd /speed-scratch/$USER/SpeedYolo
-conda create -p /speed-scratch/$USER/YOLOInteractive
-conda activate /speed-scratch/$USER/YOLOInteractive
+conda create -p /speed-scratch/$USER/YOLO
+conda activate /speed-scratch/$USER/YOLO
 ```
 4. Install all required librires you need to upgrade pip and install opencv-contrib-python library 
 
@@ -76,7 +76,7 @@ conda list
 if you need to delete the created virtual environment 
 ```
 conda deactivate
-conda env remove -p /speed-scratch/$USER/YOLOInteractive
+conda env remove -p /speed-scratch/$USER/YOLO
 ```
 
 ## Quick Start
