@@ -52,7 +52,7 @@ conda env remove -p /speed-scratch/$USER/YOLO
 -->
 
 ```
-cd /speed-scratch/$USER/YOLOInteractive
+cd /speed-scratch/$USER/SpeedYoloNonInteractive
 conda create -p /speed-scratch/$USER/YOLO
 conda activate /speed-scratch/$USER/YOLO
 ```
@@ -83,7 +83,7 @@ conda env remove -p /speed-scratch/$USER/YOLO
 
 1. Make sure you are inside the project directoy 
 ```
- cd /speed-scratch/$USER/YOLOInteractive/
+ cd /speed-scratch/$USER/SpeedYoloNonInteractive/
 ```
 2. Download YOLOv3 weights from [YOLO website](http://pjreddie.com/darknet/yolo/).
 ```
