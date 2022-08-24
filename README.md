@@ -52,7 +52,7 @@ conda env remove -p /speed-scratch/$USER/YOLO
 -->
 
 ```
-cd /speed-scratch/$USER/SpeedYolo
+cd /speed-scratch/$USER/YOLOInteractive
 conda create -p /speed-scratch/$USER/YOLO
 conda activate /speed-scratch/$USER/YOLO
 ```
@@ -83,7 +83,7 @@ conda env remove -p /speed-scratch/$USER/YOLO
 
 1. Make sure you are inside the project directoy 
 ```
- cd /speed-scratch/$USER/SpeedYolo/
+ cd /speed-scratch/$USER/YOLOInteractive/
 ```
 2. Download YOLOv3 weights from [YOLO website](http://pjreddie.com/darknet/yolo/).
 ```
@@ -104,7 +104,7 @@ python yolo_video.py --model model_data/yolo.h5 --classes model_data/coco_classe
 ```
 For video 
 ```
-python yolo_video.py --input video/v1.avi --output vido/001.avi
+python yolo_video.py --input video/v1.avi --output vido/001.avi 
 ```
 ## Run Script 
 Before you run the script you need to add permission access to the project files using `chmod` command.   
