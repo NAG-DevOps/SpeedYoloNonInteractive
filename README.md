@@ -107,7 +107,21 @@ For video
 python yolo_video.py --input video/v1.avi --output vido/001.avi
 ```
 ## Run Script 
-File `yolo_submit.sh` is the speed script to run video example to run it you follow these steps:
+Before you run the script you need to add permission access to the project files using `chmod` command.   
+```
+chmod +rwx *
+```
+To run the script you will use `qsub`, you can run the task on CPU or gpu computation node as follwoing:
+1. For CPU nodes use `yolo_subCPU.sh` file 
+```
+ qsub ./yolo_subCPU.sh
+```
+
+2. For GPU nodes use `yolo_subGPU.sh` file with option -q to specify only gpu queue (g.q) submission.
+```
+ qsub -q g.q ./yolo_subCPU.sh
+```
+<!-- File `yolo_submit.sh` is the speed script to run video example to run it you follow these steps:
 1. Since this job is an interactive job we need to keep `ssh -X` option enabled and `xming` server in your windows  working. 
 2. The `qsub` is not the proper command since we have to keep direct ssh connection to the computational node, so `qlogin` will be used. 
 3. Enter `qlogin` in the `speed-submit`. The `qlogin` will find an approriate  computational node then it will allow you to have direct `ssh -X' login to that node. Make sure you are in the right directory and activate conda environment again.
@@ -126,7 +140,7 @@ chmod +rwx *
 
 Please note that since we have limited number of node with GPU support `qlogin` is not allowed to direct you to login to these server you will be directed to the availabel computation nodes in the cluster with CPU support only. 
 
-
+-->
 For Tiny YOLOv3, just do in a similar way, just specify model path and anchor path with `--model model_file` and `--anchors anchor_file`.
 
 ### Usage

@@ -1,7 +1,7 @@
 #!/encs/bin/tcsh
 
 # Give job a name
-#$ -N yolo
+#$ -N yoloNonInteractive
 
 # Set output directory to current
 #$ -cwd
@@ -10,7 +10,7 @@
 #$ -m bea
 
 # Request GPU
-#  #$ -l gpu=2
+# #$ -l gpu=2
 
 # Request CPU with maximum memoy size = 40GB
 #$ -l h_vmem=40G
@@ -24,9 +24,9 @@
 conda activate /speed-scratch/$USER/YOLOInteractive
 
 # Image example 
-#python yolo_video.py --model model_data/yolo.h5 --classes model_data/coco_classes.txt --image 
+#python yolo_video.py --model model_data/yolo.h5 --classes model_data/coco_classes.txt --image  --gpu_num 2
 
 # Video example 
-python yolo_video.py --input video/v1.avi --output video/002.avi
+python yolo_video.py --input video/v1.avi --output video/002.avi #--gpu_num 2
 
 conda deactivate
