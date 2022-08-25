@@ -119,7 +119,7 @@ To run the script you will use `qsub`, you can run the task on CPU or gpu comput
 
 2. For GPU nodes use `yolo_subGPU.sh` file with option -q to specify only gpu queue (g.q) submission.
 ```
- qsub -q g.q ./yolo_subCPU.sh
+ qsub -q g.q ./yolo_subGPU.sh
 ```
 <!-- File `yolo_submit.sh` is the speed script to run video example to run it you follow these steps:
 1. Since this job is an interactive job we need to keep `ssh -X` option enabled and `xming` server in your windows  working. 
