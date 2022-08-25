@@ -1,7 +1,7 @@
 #!/encs/bin/tcsh
 
 # Give job a name
-#$ -N yoloNonInteractive
+#$ -N yoloNonInteractiveCPU
 
 # Set output directory to current
 #$ -cwd
@@ -12,8 +12,8 @@
 # Request GPU
 # #$ -l gpu=2
 
-# Request CPU with maximum memoy size = 40GB
-#$ -l h_vmem=40G
+# Request CPU with maximum memoy size = 80GB
+#$ -l h_vmem=80G
 
 #sleep 30
 
